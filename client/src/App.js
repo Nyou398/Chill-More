@@ -1,13 +1,23 @@
 import React from 'react';
 import './App.css';
-import Row from './Row'
-import requests from './requests';
+import Row from './components/Row.js'
+import requests from './requests.js';
+import Banner from './components/Banner.js'
 
 
 function App() {
   return (
-    <div className="App">
-      <Row title="Originals Chill" fetchUrl = {requests.fetchNetflixOriginals}/>
+    <div className="app">
+
+      {/* Navbar */}
+
+
+      {/* la banniere */}
+      <Banner/>
+
+      {/* les films */}
+
+      <Row title="NETFLIX ORIGINALS" fetchUrl = {requests.fetchNetflixOriginals} isLargeRow = {true}/>
       <Row title="Trending Now" fetchUrl = {requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl = {requests.fetchTopRated} />
       <Row title="Action" fetchUrl = {requests.fetchActionMovies} />
@@ -19,4 +29,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
