@@ -3,6 +3,7 @@ import './App.css';
 import Row from './components/Row.js'
 import requests from './requests.js';
 import Banner from './components/Banner.js'
+import NavBar from './components/NavBar.js';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="app">
 
       {/* Navbar */}
-
+      <NavBar/>
 
       {/* la banniere */}
       <Banner/>
