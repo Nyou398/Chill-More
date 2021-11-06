@@ -13,7 +13,7 @@ function App() {
 
       <Banner />
 
-      <Row title="Chill New Movies" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
+      <Row title="Chill Movies" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true} />
       <Row title="Populaire" fetchUrl={requests.fetchTrending} />
       <Row title="Les mieux notés" fetchUrl={requests.fetchTopRated} />
       <Row title="Action" fetchUrl={requests.fetchActionMovies} />
