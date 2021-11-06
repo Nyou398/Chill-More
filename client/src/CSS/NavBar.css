@@ -1,4 +1,4 @@
-.nav{
+.nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -9,11 +9,11 @@
     transition: all 0.5s;
 }
 
-.nav__black{
+.nav__black {
     background-color: #111;
 }
 
-.nav__logo{
+.nav__logo {
     position: fixed;
     left: 20px;
     width: 40px;
@@ -21,7 +21,7 @@
     top: 10px;
 }
 
-.nav__avatar{
+.nav__avatar {
     position: fixed;
     right: 20px;
     width: 30px;

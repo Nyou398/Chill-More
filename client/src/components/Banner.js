@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axios.js';
 import requests from '../requests.js';
-import '../CSS/Banner.css'
+import '../CSS/Banner.css';
 
 function Banner() {
     const [movie, setMovie] = useState([]);
-
     useEffect(() => {
         async function fetchData() {
             const request = await axios.get(requests.fetchNetflixOriginals);
@@ -17,7 +16,7 @@ function Banner() {
         fetchData();
     }, []);
 
-    console.log(movie);
+    // console.log(movie);
 
     function truncate(str, n) {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -27,9 +26,7 @@ function Banner() {
         <header className="banner"
             style={{
                 backgroundSize: "cover",
-                backgroundImage: `url(
-                "https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"
-            )`,
+                backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
                 backgroundPosition: "center center",
             }}
         >
@@ -42,8 +39,8 @@ function Banner() {
 
                 {/* bouttons */}
                 <div className="banner__buttons">
-                    <button className="banner__button">Play</button>
-                    <button className="banner__button">Info</button>
+                    <button className="banner__button">Regarde maintenant</button>
+                    <button className="banner__button">Ajouter à la liste</button>
                 </div>
 
                 {/* description */}
